@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tedm-drying-model"
+version = "1.0.0"
+description = "Tide-Ebbing Drying Model (TEDM): a finite-volume model for coupled heat and moisture transport during the drying of a cylindrical herb"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "2026 CUMCM Problem A team" },
+]
+keywords = [
+    "heat-transfer",
+    "mass-transfer",
+    "drying",
+    "finite-volume",
+    "moving-boundary",
+    "mathematical-modelling",
+    "CUMCM",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "pandas>=1.5",
+    "matplotlib>=3.6",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/REPLACE-WITH-YOUR-USERNAME/tedm-drying-model"
+
+[tool.setuptools.packages.find]
+include = ["tedm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+    "slow: full-model runs (tens of seconds); deselect with -m 'not slow'",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]

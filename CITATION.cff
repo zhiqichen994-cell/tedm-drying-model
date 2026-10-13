@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "TEDM — Tide-Ebbing Drying Model for the 2026 CUMCM Problem A (herb drying)"
+message: >-
+  If you use this software or the accompanying model in your research,
+  please cite it using the metadata below.  This repository reproduces the
+  computational work of a 2026 China Undergraduate Mathematical Contest in
+  Modeling (CUMCM / 高教社杯) submission for Problem A.
+type: software
+authors:
+  - name: "CUMCM-2026 Team (Problem A — Herb Drying)"
+    note: >-
+      Three-person undergraduate team. The numerical code in this repository
+      was authored by the programming member.
+repository-code: "https://github.com/<your-username>/tedm-drying-model"
+license: MIT
+version: 1.0.0
+date-released: 2026-10-13
+keywords:
+  - mathematical modeling
+  - heat and mass transfer
+  - drying
+  - finite volume method
+  - CUMCM
+  - verification and validation
